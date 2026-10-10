@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | DirectorCast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { brandBlack: '#050505', brandRed: '#FF2A4B', brandBlue: '#3B82F6' } } }
+        }
+    </script>
+</head>
+<body class="bg-brandBlack text-gray-300 font-sans antialiased">
+    <nav class="border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-black tracking-tight text-white hover:text-gray-300">Director<span class="font-light">Cast</span></a>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 py-20">
+        <h1 class="text-4xl font-black text-white mb-2">Privacy Policy</h1>
+        <p class="text-sm text-gray-500 mb-10">Last Updated: October 2026</p>
+
+        <div class="space-y-8 text-sm leading-relaxed">
+            <section>
+                <h2 class="text-lg font-bold text-white mb-3">1. Local Network Access (NEARBY_WIFI_DEVICES)</h2>
+                <p>DirectorCast requires the <code class="bg-white/10 px-1 py-0.5 rounded text-brandBlue">NEARBY_WIFI_DEVICES</code> permission (on Android 13+) exclusively to discover and connect to secondary camera nodes on your local Wi-Fi network. This permission is strictly used to enable zero-latency, IP-to-IP local video streaming between the Host and Camera Nodes. We <strong>do not</strong> use this permission to determine your physical location, we do not map your local network, and no local network data is ever transmitted to our servers or any third party.</p>
+            </section>
+
+            <section>
+                <h2 class="text-lg font-bold text-white mb-3">2. Camera and Microphone Access</h2>
+                <p>The app requires Camera and Microphone permissions to capture live video and audio for your broadcast production. This media is processed locally on your devices. Audio and video data is never uploaded to our servers. It is only transmitted externally if you, the user, explicitly configure and initiate a Custom RTMP stream to a third-party broadcasting platform (e.g., YouTube, Twitch).</p>
+            </section>
+
+            <section>
+                <h2 class="text-lg font-bold text-white mb-3">3. Account Data and Deletion</h2>
+                <p>DirectorCast uses Firebase Authentication to manage your studio profile. You can permanently delete your account, along with all associated profile data and cloud configurations, at any time directly within the app by navigating to the <strong>Profile Tab > Account Details > Delete Account</strong>.</p>
+            </section>
+
+            <section>
+                <h2 class="text-lg font-bold text-white mb-3">4. Contact Us</h2>
+                <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at: <a href="mailto:support@directorcast.in" class="text-brandBlue hover:underline">support@directorcast.in</a>.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
