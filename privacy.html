@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | DirectorCast</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
     <script>
         tailwind.config = {
             theme: { 
@@ -24,14 +25,39 @@
 <body class="bg-brandBlack text-gray-300 font-sans antialiased">
 
     <!-- Navigation -->
-    <nav class="border-b border-white/10 px-6 py-4 flex justify-between items-center bg-brandBlack/90 backdrop-blur-md">
-        <a href="index.html" class="flex items-center gap-3">
-            <img src="app_icon_white.png" alt="DirectorCast Icon" class="h-10 w-auto mix-blend-screen">
-            <img src="wordmark_white.png" alt="DirectorCast Logo" class="h-10 w-auto mix-blend-screen">
-        </a>
+    <nav class="border-b border-white/10 px-6 py-4 bg-brandBlack/90 backdrop-blur-md fixed w-full top-0 z-50">
+        <div class="flex justify-between items-center max-w-7xl mx-auto w-full">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="app_icon.png" alt="DirectorCast Icon" class="h-10 sm:h-12 w-auto mix-blend-screen">
+                <img src="wordmark.png" alt="DirectorCast Logo" class="h-10 sm:h-12 w-auto mix-blend-screen">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-6 text-sm font-semibold text-gray-400">
+                <a href="index.html#features" class="hover:text-white transition-colors">Features</a>
+                <a href="index.html#workflow" class="hover:text-white transition-colors">Workflow</a>
+                <a href="privacy.html" class="text-white transition-colors">Privacy Policy</a>
+                <a href="mailto:support@directorcast.in" class="hover:text-brandBlue transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden flex-col gap-6 pt-6 pb-2 text-sm font-semibold text-gray-400 text-center border-t border-white/10 mt-4">
+            <a href="index.html#features" class="hover:text-white transition-colors mobile-link">Features</a>
+            <a href="index.html#workflow" class="hover:text-white transition-colors mobile-link">Workflow</a>
+            <a href="privacy.html" class="text-white transition-colors mobile-link">Privacy Policy</a>
+            <a href="mailto:support@directorcast.in" class="text-brandBlue transition-colors mobile-link">Contact</a>
+        </div>
     </nav>
 
-    <main class="max-w-3xl mx-auto px-6 py-20">
+    <main class="max-w-3xl mx-auto px-6 py-32 md:py-40">
         <h1 class="text-4xl font-black text-white mb-2">Privacy Policy</h1>
         <p class="text-sm text-gray-500 mb-10">Last Updated: October 2026</p>
 
